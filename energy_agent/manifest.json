@@ -1,0 +1,11 @@
+{
+  "domain": "energy_agent",
+  "name": "energy agent",
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "https://app.energy-agent.at/api/v0/docs",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "0.2.0"
+}

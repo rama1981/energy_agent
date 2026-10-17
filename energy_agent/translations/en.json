@@ -1,0 +1,64 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "energy agent",
+        "description": "Enter your personal API key from energy-agent.at (starts with ea_).",
+        "data": {
+          "api_key": "API key"
+        }
+      },
+      "community": {
+        "title": "Choose energy community",
+        "data": {
+          "community_id": "Energy community"
+        }
+      },
+      "reauth_confirm": {
+        "title": "API key no longer valid",
+        "description": "Enter a new API key.",
+        "data": {
+          "api_key": "API key"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid API key",
+      "cannot_connect": "Could not connect to energy agent",
+      "unknown": "Unexpected error",
+      "no_communities": "This account is not an active member of any energy community"
+    },
+    "abort": {
+      "already_configured": "This energy community is already configured",
+      "reauth_successful": "API key updated"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "generation_current": {
+        "name": "Generation forecast current interval"
+      },
+      "generation_next_24h": {
+        "name": "Generation forecast next 24 h"
+      },
+      "generation_state": {
+        "name": "Generation forecast status"
+      },
+      "consumption_current": {
+        "name": "Consumption forecast current interval"
+      },
+      "consumption_next_24h": {
+        "name": "Consumption forecast next 24 h"
+      },
+      "consumption_state": {
+        "name": "Consumption forecast status"
+      },
+      "generation_current_power": {
+        "name": "Generation forecast power"
+      },
+      "consumption_current_power": {
+        "name": "Consumption forecast power"
+      }
+    }
+  }
+}
