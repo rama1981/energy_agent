@@ -1,0 +1,64 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "energy agent",
+        "description": "Gib deinen persönlichen API-Key von energy-agent.at ein (beginnt mit ea_).",
+        "data": {
+          "api_key": "API-Key"
+        }
+      },
+      "community": {
+        "title": "Energiegemeinschaft wählen",
+        "data": {
+          "community_id": "Energiegemeinschaft"
+        }
+      },
+      "reauth_confirm": {
+        "title": "API-Key nicht mehr gültig",
+        "description": "Gib einen neuen API-Key ein.",
+        "data": {
+          "api_key": "API-Key"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Ungültiger API-Key",
+      "cannot_connect": "Verbindung zu energy agent fehlgeschlagen",
+      "unknown": "Unerwarteter Fehler",
+      "no_communities": "Dieses Konto ist in keiner Energiegemeinschaft aktives Mitglied"
+    },
+    "abort": {
+      "already_configured": "Diese Energiegemeinschaft ist bereits eingerichtet",
+      "reauth_successful": "API-Key aktualisiert"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "generation_current": {
+        "name": "Erzeugungsprognose aktuelles Intervall"
+      },
+      "generation_next_24h": {
+        "name": "Erzeugungsprognose nächste 24 h"
+      },
+      "generation_state": {
+        "name": "Erzeugungsprognose Status"
+      },
+      "consumption_current": {
+        "name": "Verbrauchsprognose aktuelles Intervall"
+      },
+      "consumption_next_24h": {
+        "name": "Verbrauchsprognose nächste 24 h"
+      },
+      "consumption_state": {
+        "name": "Verbrauchsprognose Status"
+      },
+      "generation_current_power": {
+        "name": "Erzeugungsprognose Leistung"
+      },
+      "consumption_current_power": {
+        "name": "Verbrauchsprognose Leistung"
+      }
+    }
+  }
+}
