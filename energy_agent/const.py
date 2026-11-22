@@ -11,7 +11,7 @@ CONF_COMMUNITY_NAME = "community_name"
 
 TARGETS = ("generation", "consumption")
 
-SCAN_INTERVAL = timedelta(minutes=5)
+SCAN_INTERVAL = timedelta(minutes=15)
 INTERVAL = timedelta(minutes=15)
 
 # kWh pro 15-Minuten-Intervall -> mittlere Leistung in kW (60 / 15)

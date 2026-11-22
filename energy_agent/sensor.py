@@ -106,6 +106,10 @@ def _state_value(fc: CommunityForecast, now: datetime) -> StateType:
     return fc.state
 
 
+def _state_attrs(fc: CommunityForecast, now: datetime) -> dict[str, Any]:
+    return {"fetched_at": fc.fetched_at.isoformat()}
+
+
 @dataclass(frozen=True, kw_only=True)
 class EnergyAgentSensorDescription(SensorEntityDescription):
     target: str
@@ -152,6 +156,7 @@ def _descriptions(target: str) -> tuple[EnergyAgentSensorDescription, ...]:
             options=STATES,
             entity_category=EntityCategory.DIAGNOSTIC,
             value_fn=_state_value,
+            attrs_fn=_state_attrs,
         ),
     )
 
